@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+1+Code&display=swap');
+:root {
+    --nav-color: #f7f7f7;
+}
+body{
+    background-color: #25272E;
+}
+*{
+    padding: 0;
+    margin:0;
+    font-family: 'Asap',sans-serif;
+}
+header{
+    padding:20px;
+    background-color: rgb(216, 207, 207);
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Asap',sans-serif;
+}
+button{
+    margin: 10px;
+    border-radius: 20px;
+    padding :20px;
+    font-size: large;
+    box-shadow: -3px 3px orange, -2px 2px orange, -1px 1px orange;
+    border: 1px solid orange;
+    transition: all 0.3s ease;
+}
+button:hover{
+    cursor: pointer;
+    background: rgb(34, 194, 82) ;
+}
+.main {
+    border-radius: 20px;
+    background-color: var(--nav-color);
+    padding: 20px;
+    margin: 50px;
+    width: 50%;
+    text-align: justify;
+    font-size: 30px;
+}
+table{
+    background-color: orange;
+    border: solid brown;
+    border-radius: 20px;
+    width: 20%;
+    border-width: 5px;
+    padding: 10px;
+    margin :auto;
+}
+
+td:hover{
+    background-color: cyan;
+}
+th{
+    text-align: center;
+    padding: 10px;
+}
+td{
+    padding: 10px;
+    transition: all 0.3s ease;
+}
+#Results{
+    visibility: hidden;
+}
+#Correction{
+    visibility: hidden;
+    animation:blinker 1s linear infinite;
+    color: red;
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+}
+@keyframes blinker {
+    50%{
+        opacity: 0;
+    }
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing Test</title>
+</head>
+<body>
+    <header>
+        <p>
+            Typing Test!
+        </p>
+    </header>
+    <div class="start">
+        <center>
+            <div id="main" class="main">
+                <div id="text-container" class="text-container" ></div>
+            </div>
+        </center>
+    </div>
+	<div id="Correction">You made a typo! Press Backspace</div>
+
+	<button id="button">
+		Click me to get Results (Only after you're done)
+	</button>
+	<button>
+		<a href="javascript:location.reload(true)">Test Again</a>
+	</button>
+    
+	
+	<!--Show after done-->
+
+    <br><br><br><br><br>
+	
+    <div id="Results">
+        <table>
+            <tr>
+                <th colspan="2">Your Results</th>
+            </tr>
+            <tr>
+                <td>
+                    Time Taken:
+                </td>
+                <td id ="time">
+                    0m 0s
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Accuracy:
+                </td>
+                <td id = "accuracy">
+                    0%
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Speed:
+                </td>
+                <td id="speed">
+                    0 WPM
+                </td>
+            </tr>
+        </table>
+    </div>
+    <script src="Script.js"></script>
+</body>
+</html>
